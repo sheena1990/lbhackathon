@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<!-- <property name="connection.datasource">LbHacksDS</property> -->
+				<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="hibernate.connection.username">lb_hacks</property>
+		<property name="hibernate.connection.password">lb_hacks</property>
+		<property name="hibernate.default_schema">lb_hacks</property>
+		<!-- <property name="hibernate.connection.pool_size">5</property> -->
+
+		<!-- List of XML mapping files -->
+		<mapping resource="com\hbm\User.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

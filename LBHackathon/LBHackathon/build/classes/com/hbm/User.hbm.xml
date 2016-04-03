@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.model.User" table="Help_User">
+      <meta attribute="class-description">
+         This class contains the user detail. 
+      </meta>
+      <id name="userId" type="string" column="user_id"/>
+      <property name="latitude" column="x" type="double"/>
+      <property name="longitude" column="y" type="double"/>
+   </class>
+</hibernate-mapping>
