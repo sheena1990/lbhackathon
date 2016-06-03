@@ -1,10 +1,14 @@
 drop table location;
+
 drop table help_user;
+
 create table location(
 location_id number not null primary key,
 latitude number,
 longitude number
 );
+
+
 create table help_user(
 user_token varchar2(100) not null primary key,
 imei_num varchar2(100),
